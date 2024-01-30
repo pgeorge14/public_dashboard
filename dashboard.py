@@ -941,6 +941,6 @@ if button == True:
     ax6.text(min_x_2,max_y_2*1.05,title_2,size=30,c='w',ha='left',va='bottom',**hfont)
 
 
-    fig.text(0.85,0.05,"Inspired by @InsightMrkt\n@analyticswba" ,size=20,**hfont,c='w',ha='right',va='top')
+    fig.text(0.95,0.05,"Inspired by @InsightMrkt\n@analyticswba" ,size=20,**hfont,c='w',ha='right',va='top')
 
     st.pyplot(fig)
