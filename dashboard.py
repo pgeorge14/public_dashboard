@@ -28,7 +28,7 @@ mapper2 = plt.cm.ScalarMappable(norm=norm, cmap=my_dullmap)
 st.header('Percentile Dashboard App')
 st.write('by @analyticswba')
 
-st.write("\n\n\nA tool to show performance levels for any outfield player in England's top four leagues over the past 4 seasons.\nData up to date as at 22/11/2023.")
+st.write("\n\n\nA tool to show performance levels for any outfield player in England's top four leagues over the past 4 seasons.\nData up to date as at 30/01/2024.")
 st.write('\n\nPlease set the parameters and click run to see your visualisation.\n\nIt is recommended to set minimum number of 90s to at least a third of the bar.')
 
 season  = st.selectbox('Select season', options = ['2023/24','2022/23','2021/22','2020/21'])
@@ -939,5 +939,8 @@ if button == True:
 
 
     ax6.text(min_x_2,max_y_2*1.05,title_2,size=30,c='w',ha='left',va='bottom',**hfont)
+
+
+    fig.text(0.85,0.05,"Inspired by @InsightMrkt\n@analyticswba" ,size=15,**hfont,c='w',ha='center',va='top')
 
     st.pyplot(fig)
